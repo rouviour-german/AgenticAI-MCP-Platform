@@ -1,0 +1,18 @@
+servers:
+  database:
+    transport: stdio
+    command: python
+    args: ["-m", "mcp_servers.database_server.server"]
+    env:
+      DATABASE_PATH: output/platform.db
+
+  filesystem:
+    transport: stdio
+    command: python
+    args: ["-m", "mcp_servers.filesystem_server.server"]
+    env:
+      FILESYSTEM_ROOT: ./sandbox_files
+
+#  weather:
+#    transport: sse
+#    url: http://localhost:8001/mcp/sse
