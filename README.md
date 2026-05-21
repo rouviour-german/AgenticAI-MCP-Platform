@@ -76,6 +76,10 @@ To add a new tool simply implement a new MCP Server using the official Python SD
 
 ---
 
+---
+
+---
+
 ## Author & Contact
 
 - **GitHub:** [@rouviour-german](https://github.com/rouviour-german)
